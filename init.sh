@@ -1,3 +1,5 @@
+buildbot stop master
+vagrant destroy
 rm -rf .vagrant
 rm -rf master
 

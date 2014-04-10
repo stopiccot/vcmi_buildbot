@@ -1,5 +1,6 @@
-# Install pip
-apt-get install python-pip
+# Install pip and python headers
+apt-get --yes install python-pip
+apt-get --yes install python-dev
 
 # Configure buildslave
 pip install virtualenv
