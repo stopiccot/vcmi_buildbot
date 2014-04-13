@@ -12,7 +12,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         osx.vm.box = "stopiccot/osx-10.9-xcode"
         osx.vm.box_url = "http://stopiccot.com/osx-10.9-xcode.box"
 
-        osx.vm.provision "shell", path: "osx_setup.sh"
+        osx.vm.provision "shell", path: "osx_setup_admin.sh"
+        osx.vm.provision "shell", path: "osx_setup.sh", privileged: false
     end
 
     config.vm.define "ubuntu" do |ubuntu|
