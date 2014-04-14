@@ -1,3 +1,6 @@
+# Before installing anything we'd better update repo lists
+apt-get update
+
 # Install pip and python headers
 apt-get --yes install python-pip
 apt-get --yes install python-dev
