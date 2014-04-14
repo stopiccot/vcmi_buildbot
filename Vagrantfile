@@ -23,6 +23,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         ubuntu.vm.provision "shell", path: "ubuntu_setup_admin.sh"
         ubuntu.vm.provision "shell", path: "ubuntu_setup.sh", privileged: false
 
-        ubuntu.vm.memory = 1024
+        ubuntu.vm.provider "virtualbox" do |v|
+            v.memory = 1024
+        end
     end
 end
