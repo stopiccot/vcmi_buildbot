@@ -17,8 +17,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
 
     config.vm.define "ubuntu" do |ubuntu|
-        ubuntu.vm.box = "chef/ubuntu-13.10"
-        ubuntu.vm.box_url = "https://vagrantcloud.com/chef/ubuntu-13.10/version/1/provider/virtualbox.box"
+        ubuntu.vm.box = "chef/ubuntu-14.04"
+        ubuntu.vm.box_url = "https://vagrantcloud.com/chef/ubuntu-14.04/version/1/provider/virtualbox.box"
 
         ubuntu.vm.provision "shell", path: "ubuntu_setup_admin.sh"
         ubuntu.vm.provision "shell", path: "ubuntu_setup.sh", privileged: false
