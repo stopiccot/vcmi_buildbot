@@ -1,3 +1,7 @@
+VCMI buildbot
+-------------
+
+Setup instructions for Ubuntu 14.04 LTS.
 Install buildbot dependencies
 
     sudo apt-get install python-pip python-dev
