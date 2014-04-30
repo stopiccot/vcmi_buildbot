@@ -1,11 +1,21 @@
-sudo apt-get install python-pip
-sudo apt-get install python-dev
-sudo pip install buildbot
-sudo apt-get install vagrant
-sudo apt-get install virtualbox
+Install buildbot dependencies
 
-buildbot create-master master
-cp buildbot_master.cfg master/master.cfg
-buildbot start master
+    sudo apt-get install python-pip python-dev
 
-vagrant up
+Install buildbot master
+
+    sudo pip install buildbot
+
+Install vagrant and virtualbox
+
+    sudo apt-get install vagrant virtualbox
+
+Start buildbot master
+
+    buildbot create-master master
+    cp buildbot_master.cfg master/master.cfg
+    buildbot start master
+    
+Then start virtual machines
+
+    vagrant up
