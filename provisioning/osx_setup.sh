@@ -1,6 +1,6 @@
 # Install homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-brew doctor
+# ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+# brew doctor
 
 # Install cmake
 brew install cmake
