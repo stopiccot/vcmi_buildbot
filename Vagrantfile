@@ -7,10 +7,11 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     config.vm.define "osx" do |osx|
-        # osx.vm.box = "AndrewDryga/osx-mavericks"
+        osx.vm.box = "AndrewDryga/osx-mavericks"
+        osx.vm.box_url = "https://vagrantcloud.com/AndrewDryga/osx-mavericks/version/2/provider/virtualbox.box"
 
-        osx.vm.box = "stopiccot/osx-10.9-xcode"
-        osx.vm.box_url = "http://stopiccot.com/osx-10.9-xcode.box"
+        # osx.vm.box = "stopiccot/osx-10.9-xcode"
+        # osx.vm.box_url = "http://stopiccot.com/osx-10.9-xcode.box"
 
         osx.vm.provision "shell", path: "provisioning/osx_setup_privileged.sh"
         osx.vm.provision "shell", path: "provisioning/osx_setup.sh", privileged: false
